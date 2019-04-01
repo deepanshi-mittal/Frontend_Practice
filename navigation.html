@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      function activation(act)
+      {
+        document.getElementById('ids').style.backgroundColor="green";
+      }
+    </script>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li id="o1" onclick="this.style.backgroundColor='red'"><a href="#">Option_1</a></li>
+      <li id="o2" onclick="this.style.backgroundColor='red'"><a href="#">Option_2</a></li>
+      <li id="o3" onclick="this.style.backgroundColor='red'"><a href="#">Option_3</a></li>
+
+      <li class="dropdown"><a href="javascript:void(0)" class="drop">Option_5</a>
+        <div class="dcontent">
+          <a href="#">L1</a>
+          <a href="#">L2</a>
+          <a href="#">L3</a>
+        </div>
+      </li>
+      <li id="o4" onclick="this.style.backgroundColor='red'"><a href="#">Option_4</a></li>
+      </ul>
+  </body>
+</html>
