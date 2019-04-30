@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Sidebar nav</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sidebarnav.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div id="main">
+      <div id="topbar"><h2>Side navigation bar</h2></div>
+      <div><button onclick="toggle()">Sidebar</button></div><br>
+    </div>
+    <div id="n">
+      <nav id="nb">
+        <div id="i1" style="background-color: grey;"><a href="javascript:void(0)" onclick="toggle()"><i class="fas fa-times"></i></a></div><br>
+        <ul>
+          <li>Home</li>
+          <hr>
+          <li>About</li>
+          <hr>
+        </ul>
+      </nav>
+    </div>
+    <script>
+      var x=0;
+      function toggle()
+      {
+        if(x==0)
+        {
+          document.getElementById("nb").style.width="300px";
+          x=1;
+        }
+        else{
+          document.getElementById("nb").style.width="0px";
+          x=0;
+        }
+      }
+    </script>
+  </body>
+</html>
